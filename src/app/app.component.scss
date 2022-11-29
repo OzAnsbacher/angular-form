@@ -64,4 +64,10 @@ label{
     margin: 10px 0; 
 }
 
-
+.status{
+    color: red;
+    font-size: .7em;
+    .ng-valid & {
+        color: green;
+      }
+}

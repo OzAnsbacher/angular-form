@@ -9,7 +9,10 @@
       <input id="first-name" type="text" formControlName="firstName">
 
       <label for="last-name">Last Name: </label>
-      <input id="last-name" type="text" formControlName="lastName"  maxlength="5">
+      <input id="last-name" type="text" formControlName="lastName" maxlength="5">
+
+      <label for="email">Email: </label>
+      <input id="email" type="email" formControlName="email">
 
       <div class="vegetarian">
         <label for="vegetarian">Vegetarian: </label>
@@ -29,10 +32,10 @@
         <option value="independent">Independent</option>
         <option value="Other">Other</option>
       </select>
+
     </div>
   </div>
   <button type="button" (click)="onAddguests()">Add Another Person</button>
-  <p>Form Status: {{ profileForm.status }}</p>
-  <p>Complete the form to enable button.</p>
+  <p class="status"> {{ profileForm.status }}</p>
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>
