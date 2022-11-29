@@ -32,7 +32,7 @@ export class AppComponent {
   addGuests() {
     return this.fb.group({
       firstName: ['', Validators.required],
-      lastName: '',
+      lastName: ['', Validators.maxLength],
       email: ['', Validators.email],
       vegetarian: '',
       person: '',
